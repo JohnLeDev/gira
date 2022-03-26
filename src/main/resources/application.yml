@@ -5,13 +5,13 @@ spring:
             password: 1234
     datasource:
         username: postgres
-        url: jdbc:postgresql://localhost:5432/gira
+        url: jdbc:postgresql://localhost:5432/postgres
         password: admin
     jpa:
         generate-ddl: true
         hibernate:
-            ddl-auto: create-drop
-        show-sql: 'true'
+            ddl-auto: update
+        show-sql: true
     flyway:
         enabled: false
         driver-class-name: org.postgresql.Driver
